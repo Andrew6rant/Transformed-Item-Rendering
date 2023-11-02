@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "tir",
+	"version": "${version}",
+	"name": "Transformed Item Rendering",
+	"description": "",
+	"authors": [
+		"Andrew6rant (Andrew Grant)"
+	],
+	"contact": {
+		"sources": "https://github.com/Andrew6rant/"
+	},
+	"license": "MIT",
+	"icon": "assets/tir/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+		],
+		"client": [
+			"io.github.andrew6rant.tir.TransformedItemRenderingClient"
+		]
+	},
+	"mixins": [
+		"tir.mixins.json",
+		{
+			"config": "tir.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": [
+			"1.20.x",
+			"1.19.x"
+		],
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
